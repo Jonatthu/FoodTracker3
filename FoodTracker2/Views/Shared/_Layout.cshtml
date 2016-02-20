@@ -7,6 +7,9 @@
     @Styles.Render("~/Css")
 </head>
 <body>
-    @RenderBody()
+    @Html.Partial("~/Views/Shared/_NavBar.cshtml")
+    <div class="container" style="margin-top: 60px">
+        @RenderBody()
+    </div>
 </body>
 </html>
