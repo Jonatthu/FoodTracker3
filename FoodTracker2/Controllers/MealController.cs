@@ -13,5 +13,10 @@ namespace FoodTracker2.Controllers
         {
             return View();
         }
+
+        public ActionResult New()
+        {
+            return View();
+        }
     }
 }
