@@ -1,6 +1,13 @@
-﻿
+﻿@model FoodTracker3.Models.Meal
 @{
     ViewBag.Title = "New";
+}
+
+@using (@Html.BeginForm("New", "Meal", FormMethod.Post, new { @class = "", @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
 }
 
 <form>

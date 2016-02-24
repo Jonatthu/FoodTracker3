@@ -20,6 +20,8 @@ namespace FoodTracker3.Business
 
         public void AddNew(Meal model)
         {
+            model.Active = true;
+            model.Date = DateTime.Now;
             this.MealUnitOfWork.MealRepository.Insert(model);
             this.MealUnitOfWork.SaveChanges();
         }
