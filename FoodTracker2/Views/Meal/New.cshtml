@@ -8,24 +8,28 @@
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
 
-    @Html.LabelFor(m => m.MealName, "Meal Name")
-    @Html.TextBoxFor(m => m.MealName, new { @class = "form-control", placeholder = "Write the name of the meal" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.MealName, "Meal Name")
+        @Html.TextBoxFor(m => m.MealName, new { @class = "form-control", placeholder = "Write the name of the meal" })
+    </div>
+    <div class="form-group">
 
-    @Html.LabelFor(m => m.AuthorName, "Author Name")
-    @Html.TextBoxFor(m => m.AuthorName, new { @class = "form-control", placeholder = "Write the author name" })
-
-    @Html.LabelFor(m => m.Rating, "Choose the Rating")
-    <select name="Rating">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-
+        @Html.LabelFor(m => m.AuthorName, "Author Name")
+        @Html.TextBoxFor(m => m.AuthorName, new { @class = "form-control", placeholder = "Write the author name" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Rating, "Choose the Rating")
+        <select name="Rating" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
 }
 
-<form>
+@*<form>
     <div class="form-group">
         <label for="MealName">Meal Name</label>
         <input type="email" class="form-control" id="MealName" placeholder="Name">
@@ -48,4 +52,4 @@
     </div>
 
     <button type="submit" class="btn btn-default">Add Meal</button>
-</form>
+</form>*@
