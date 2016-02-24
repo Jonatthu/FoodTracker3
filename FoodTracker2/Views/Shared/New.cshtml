@@ -3,6 +3,13 @@
     ViewBag.Title = "New";
 }
 
+@using (@Html.BeginForm("New", "Meal", FormMethod.Post, new { @class = "", @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+}
+
 <form>
     <div class="form-group">
         <label for="MealName">Meal Name</label>
