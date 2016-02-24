@@ -12,6 +12,6 @@ namespace FoodTracker2.Models
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public int Rating { get; set; }
-        public DateTime PostDate { get; set; }
+        public DateTime Date { get; set; }
     }
 }
