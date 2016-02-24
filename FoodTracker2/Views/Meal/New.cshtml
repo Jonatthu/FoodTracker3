@@ -8,6 +8,21 @@
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
 
+    @Html.LabelFor(m => m.MealName, "Meal Name")
+    @Html.TextBoxFor(m => m.MealName, new { @class="form-control", placeholder = "Write the name of the meal" })
+
+    @Html.LabelFor(m => m.AuthorName, "Author Name")
+    @Html.TextBoxFor(m => m.AuthorName, new { @class="form-control", placeholder = "Write the author name" })
+    
+    @Html.LabelFor(m => m.Rating, "Choose the Rating")
+    <select name="Rating">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
 }
 
 <form>
