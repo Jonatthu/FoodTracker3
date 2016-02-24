@@ -192,6 +192,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Meal\Index.cshtml" />
+    <Content Include="Views\Meal\New.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
