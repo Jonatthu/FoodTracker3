@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace FoodTracker2
+namespace FoodTracker3
 {
     public class FilterConfig
     {

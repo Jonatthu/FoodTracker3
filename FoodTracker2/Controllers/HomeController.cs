@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace FoodTracker2.Controllers
+namespace FoodTracker3.Controllers
 {
     public class HomeController : Controller
     {
