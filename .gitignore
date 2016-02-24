@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/FoodTracker2/bin
+/FoodTracker2/obj/Debug
+/.vs/config
