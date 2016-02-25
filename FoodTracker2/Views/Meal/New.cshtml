@@ -31,6 +31,11 @@
         @Html.LabelFor(m => m.Description, "Description")
         @Html.TextBoxFor(m => m.Description, new { @class = "form-control", placeholder = "Write the Description" })
     </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ImageUrl, "Meal Name")
+        @Html.TextBoxFor(m => m.ImageUrl, new { @class = "form-control", placeholder = "URL" })
+    </div>
+    <p><a href="~/Views/Home/Index" class="btn btn-primary pull-right" role="button">Add New Meal</a></p>
 }
 
 @*<form>
