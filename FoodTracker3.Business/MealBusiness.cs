@@ -26,6 +26,12 @@ namespace FoodTracker3.Business
             this.MealUnitOfWork.SaveChanges();
         }
 
+        public ICollection<Meal> GetMeals()
+        {
+            var list = this.MealUnitOfWork.MealRepository.Get().ToList();
+            return list;
+        }
+
         public Meal GetMeal(int Id)
         {
             var model = this.MealUnitOfWork.MealRepository.GetById(Id);

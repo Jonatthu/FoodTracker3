@@ -1,4 +1,5 @@
-﻿
+﻿@model ICollection<FoodTracker3.Models.Meal>
+
 @{
     ViewBag.Title = "Home";
 }
@@ -16,6 +17,25 @@
         </div>
     </div>
 </div>
+
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="http://www.bestfon.info/images/joomgallery/originals/comida_9/comida_46_20120413_1185044355.jpg" alt="Kiwi" width="240" height="200">
+                <div class="caption">
+                    <h3>Comida Gourmete</h3>
+                    <p>Informacion de la comida para poder venderla al publico y eso</p>
+                    <p><a href="Meal/Index/" class="btn btn-primary" role="button">Ver</a></p>
+                    <button type="button" class="btn btn-default pull-right">Delete </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 
 @*<div class="row">
         <div class="col-sm-6 col-md-4">
