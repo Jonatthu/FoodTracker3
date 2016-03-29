@@ -54,9 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FoodTracker3DbContext.cs" />
-    <Compile Include="Migrations\201602240727009_Initial.cs" />
-    <Compile Include="Migrations\201602240727009_Initial.Designer.cs">
-      <DependentUpon>201602240727009_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201603220641203_PaulInitial.cs" />
+    <Compile Include="Migrations\201603220641203_PaulInitial.Designer.cs">
+      <DependentUpon>201603220641203_PaulInitial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,8 +84,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201602240727009_Initial.resx">
-      <DependentUpon>201602240727009_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201603220641203_PaulInitial.resx">
+      <DependentUpon>201603220641203_PaulInitial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

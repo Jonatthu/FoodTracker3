@@ -218,6 +218,10 @@
       <Project>{0c0e6e78-a284-4782-ba25-8c0725e6916c}</Project>
       <Name>FoodTracker3.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FoodTracker3.Data\FoodTracker3.Data.csproj">
+      <Project>{d5c8486f-e324-463b-8fb6-aeae03b2a75b}</Project>
+      <Name>FoodTracker3.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FoodTracker3.Models\FoodTracker3.Models.csproj">
       <Project>{4383e8b0-485a-462d-a2ca-d7b7e58fb4f1}</Project>
       <Name>FoodTracker3.Models</Name>
